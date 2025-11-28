@@ -1,1 +1,20 @@
 <!DOCTYPE html>
+<html>
+  <body>
+  
+ 
+<p id="number">0 seconds</p>
+
+<script>
+  let Time = 0;
+
+  setInterval(() => {
+    Time += 1;
+
+    const label = Time === 1 ? "second" : "seconds";
+    document.getElementById("number").textContent = Time + " " + label;
+
+  }, 1000);
+</script>
+ </body>
+</html>
