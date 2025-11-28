@@ -8,13 +8,13 @@
 <script>
 
   let Time = 0;
-  
+  document.getElementById("number").style.fontSize = (Time + 10) + "px";
   setInterval(() => {
-    document.getElementById("number").style.fontSize = (Time + 10) + "px";
     Time += 1;
 
     const label = Time === 1 ? "second" : "seconds";
     document.getElementById("number").textContent = Time + " " + label;
+    document.getElementById("number").style.fontSize = (Time + 10) + "px";
 
   }, 1000);
 </script>
